@@ -1,0 +1,29 @@
+# Target folders
+target
+
+.gradle
+
+*.log
+
+# Package Files #
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+
+# IDEs
+.classpath
+.idea
+*.iml
+.flattened-pom.xml
+.project
+.settings
+
+.diffblue/
+*.xd
+*.lck
+
