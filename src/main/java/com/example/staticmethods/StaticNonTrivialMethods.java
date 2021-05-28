@@ -4,7 +4,7 @@ import java.nio.charset.StandardCharsets;
 
 public class StaticNonTrivialMethods {
 
-  // on develop we used to get a test for this.
+  // we get a test for this before and after merge of PR 4890
   public static String getBase() {
     String x = "hello";
     x.getBytes(StandardCharsets.UTF_8);
