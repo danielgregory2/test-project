@@ -5,25 +5,18 @@ package com.example.equalsAndHashCode;
 
 import java.util.Objects;
 
-// Normal implementation of equals/hashcode in here.
-public class EqualsAndHashCodeMethods {
+public class EqualsAndHashCodeMethodsWithException {
 
   private final String x;
 
-  public EqualsAndHashCodeMethods(String x) {
+  public EqualsAndHashCodeMethodsWithException(String x) {
     this.x = x;
   }
 
   @Override
   public boolean equals(Object o) {
-    if (this == o) {
-      return true;
-    }
-    if (o == null || getClass() != o.getClass()) {
-      return false;
-    }
-    EqualsAndHashCodeMethods that = (EqualsAndHashCodeMethods) o;
-    return Objects.equals(x, that.x);
+    // weird
+    throw new RuntimeException();
   }
 
   @Override
