@@ -21,8 +21,8 @@ public class EqualsAndHashCodeMethods {
     if (o == null || getClass() != o.getClass()) {
       return false;
     }
-    EqualsAndHashCodeMethods equalsAndHashCodeMethods = (EqualsAndHashCodeMethods) o;
-    return Objects.equals(x, equalsAndHashCodeMethods.x);
+    EqualsAndHashCodeMethods that = (EqualsAndHashCodeMethods) o;
+    return Objects.equals(x, that.x);
   }
 
   @Override
